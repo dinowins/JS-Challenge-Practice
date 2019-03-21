@@ -1,4 +1,4 @@
-import { getAllKeys } from "./../src/challenges.js"
+import { getAllKeys, fromListToObject } from "./../src/challenges.js"
 
 describe('Challenges', function() {
 
@@ -19,6 +19,6 @@ describe('Challenges', function() {
   ];
 
   it("should take in an array of arrays and return an object with each pair of elements in the array as a key-value pair", function() {
-    expect(fromListToObject(arr)).toEqual({make:"Ford", model: "Mustang", year: "1964"});
+    expect(fromListToObject(arr)).toEqual({make : 'Ford', model : 'Mustang', year : 1964});
   });
 });
